@@ -193,16 +193,19 @@ textarea::-webkit-input-placeholder{
 .b-top-nav .e-left-item {display:block;min-width:4rem;padding-left:0.5rem;}
 .b-top-nav .e-title-item {display:block;-webkit-box-flex:1;width:0px;text-align:center;color:#333; font-size:1.3rem; font-weight:normal;white-space:nowrap;text-overflow:ellipsis;overflow:hidden;padding:0 5px;-webkit-box-align:center;-webkit-box-pack:center;}
 .b-top-nav .e-right-item{display:block;min-width:4rem;padding-right:0.5rem;text-align:right;}
-.b-top-nav .e-title-search { width: 90%; height: 2rem; padding:0 0.5rem;background-color: rgba(0,0,0,0.2); border-radius: 1.5rem; display: -webkit-box;}
-.b-top-nav .e-title-search i{color:#fff;margin-right:0.5rem;font-size:14px; line-height:2rem;}
-.b-top-nav .e-title-search input{height:100%;-webkit-box-flex:1;display:block;background-color:transparent;color:#fff;font-size:12px;line-height:2rem;}
+.b-top-nav .e-title-search { width: 96%%; height: 2rem; padding:0 0.5rem;background-color: rgba(0,0,0,0.2); border-radius: 1.5rem; display: -webkit-box;}
+.b-top-nav .e-title-search i{position: relative;color:#fff;margin-right:0.5rem;font-size:14px; line-height:2rem;}
+.b-top-nav .e-title-search input{ padding-left: 20px; height:100%;-webkit-box-flex:1;display:block;background-color:transparent; color: #a7c8f3; font-size:12px;line-height:2rem;}
 .b-top-nav .e-title-search input::-webkit-input-placeholder { color: #fff; }
 .b-top-nav .e-title-search em{display:block;height:100%;line-height:2.1rem;color:#fff;padding:0 0.6rem; }
 .b-top-nav a{height:100%;line-height:3rem;font-size:1.1rem;color:#333;}
 .b-top-nav a i{font-size:1.1rem;}
 .b-top-nav .e-right-item .e-more-menu{}
 .m-top-txt-bright-color{color:#fff;}
-
+.b-top-nav .msg{ width: 30px; cursor: pointer; position: relative;
+    height: 30px;
+    margin-right: 12px;background:url(../images/app2.png) no-repeat -42px -69px; background-size:8rem auto; }
+.b-top-nav .msg i{background-color: #ea4c3d; width: 17px; height: 14px; border-radius: 5px; position: absolute; right: -5px; top: -4px; color: #fff; line-height: 14px; text-align: center; font-size: .6rem;}
 /*顶部导航栏样式 =》更多菜单样式*/
 .b-more-menu{width:100%;height:auto;display:block;background:white;}
 .b-more-menu li{width:25%;height:auto;display:inline-block;margin:0;float:left;-webkit-box-sizing:border-box;overflow:hidden;padding:1rem 0.5rem;background:white;border-bottom:1px solid #e5e5e5;border-right:1px solid #e5e5e5}

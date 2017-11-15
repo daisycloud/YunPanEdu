@@ -72,7 +72,7 @@ input{ background:transparent; }
 .e-top-menu .pr8{    background: url(../images/menu-icon.png) no-repeat -436px center #ec7c4b ;}
 .index .notics p{ border:none;  background: url(../images/app2.png) no-repeat -110px 3px ;background-size:8.8rem auto; cursor: pointer;padding-left: 24px;  }
 
-.index .notics em{float: right; padding-right: 3rem;}
+.index .notics em{float: right; padding-right: 1rem;}
  /*登录/注册 公用头部*/
 .cm-header {
       position: relative;
@@ -136,9 +136,25 @@ input{ background:transparent; }
     font-size: 14px;
 }
 .weui-icon-search:before {
-    content: "\EA0E";
+    width: 12px;
+    height: 12px;
+   left: 4px;
+    top: -3px;
+    border: 1px solid #a7c8f3;
+    border-radius: 50%;
+    position: absolute;
+    content: "";
 }
-
+.weui-icon-search:after{width: 1px;
+    height: 7px;
+   left: 16px;
+    top: 4px;
+    background: #a7c8f3;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    position: absolute;
+    content: "";}
 /*登录/注册*/
 .login-content{ background: url(../images/login-bg-line.jpg) repeat-x 0 0 #fff; }
 .login-content .box{ padding-top: 14rem;
