@@ -16,11 +16,12 @@
 
 /*公用*/
 .padt2{ padding-top: 2rem; }
+.padt4{ padding-top: 4rem; }
 .center{ text-align: center; }
 
 /*btn*/
 input{ background:transparent; }
-.login-btn{ display: inline-block; text-align: center; color: #fff; font-size: 1.3rem; line-height: 3.2rem; height: 3.2rem; border-radius: .4rem; width: 12rem; }
+.login-btn{ display: inline-block; text-align: center; color: #fff; font-size: 1.3rem; line-height: 3.2rem; height: 3.2rem; border-radius: .4rem; width: 12rem; cursor: pointer; }
 
 /*首页*/
 .b-swipe-img img{ width: 100%; height: 100% }
@@ -90,13 +91,14 @@ input{ background:transparent; }
     transform: rotate(45deg);
     box-sizing: border-box;
 }
-    .icon-back {
+    .icon-back ,.icon-back-arrow{
       width: 44px;
       height: 44px;
       line-height: 44px;
       margin-left: 1rem;
       font-size:1.1rem;
     }
+
     .cm-header .cm-page-title {
       overflow      : hidden;
       text-overflow : ellipsis;
@@ -147,7 +149,7 @@ box-shadow: 0.1rem 0.1rem 0.1rem rgba(0,0,0,.08), -0.1rem 0 0.1rem rgba(0,0,0,.0
     background: #fff;
     position: relative;
     margin: 0 .5rem;}
-.login-item li{
+.login-item li,.agt .box .item{
     line-height: 41px; height: 41px; padding:0; border-bottom: 1px solid #dfdfdf; font-size: 1.2rem;
 }
 .login-item li span{ display: inline-block; width: 27%; font-family: "微软雅黑"; padding-left: 1.8rem; color:#000; background-image: url(../images/login-icon.png); background-repeat: no-repeat; background-size:3.2rem auto; }
@@ -178,4 +180,29 @@ vertical-align: middle;
     background-position: -28px -96px;}
 .checkbtn span.active:before{background-position: 0 -96px;}
 /*发布作业*/
-
+.agt .box{ margin:0 20px; }
+.agt .box .item{ height: 3.8rem; line-height: 3.8rem;  }
+.agt .box .item span{display: inline-block;
+    width: 30%;
+    font-family: "微软雅黑";
+    padding-left: 1.8rem;line-height: 20px;
+    height: 20px;
+    padding-left: 10px;
+    border-left: 4px  solid #408ef6;
+}
+.tarea{ background: transparent; width: 100%; height: 11rem; margin: .5rem 0;  }
+.nobor{ border:none !important; }
+.agt .box .img,.agt .add{width: 3rem; height: 3rem; display: inline-block; position: relative; vertical-align: middle; margin-right: 4px;} 
+.agt .box .img img{ width: 100%; height: 100% }
+.agt .img i,.agt .add{background:url(../images/app2.png) no-repeat -22px -117px; background-size:8.8rem auto; cursor: pointer; }
+.agt .img i{position: absolute; right: -4px; top: -10px; width: 18px; height: 18px; background-position:-65px 1px;} 
+.agt .add{ background-position: 1px 1px; }
+.icon-back-arrow{ background: url(../images/login-icon.png) no-repeat;
+    background-size: 3.2rem auto;
+    cursor: pointer;
+    background-position: 0 -119px;
+    display: inline-block;width: 2rem;
+    height: 44px;}
+.icon-cal,.icon-switch{float: right; width: 40px; height: 40px; background:url(../images/login-icon.png) no-repeat ; background-size:3.2rem auto; vertical-align: middle; cursor: pointer; }
+.icon-cal{ background-position: 0 -154px; }
+.icon-switch{ background-position: 0 -215px; }
