@@ -3,7 +3,11 @@ var gulp = require('gulp'),
 
 gulp.task('watch', function() {
     livereload.listen();
-    gulp.watch('website/*.*',function(file){
+    gulp.watch('*/*.*',function(file){
         livereload.changed(file.path);
     });
 });
+
+
+// 运行server: $ http-server
+// 运行 gulp watch:  $ gulp watch
