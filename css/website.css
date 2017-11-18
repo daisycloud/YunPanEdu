@@ -22,7 +22,7 @@ text-overflow:ellipsis;
 white-space: nowrap;}
 
 /*头部*/
-.b-warp .top{ height: 70px; background: url(../images/w-top.jpg) no-repeat center bottom; background-size: 100% auto; }
+.b-warp .top{ height: 70px; background: url(../images/w-top.jpg) no-repeat center bottom; background-size: 100% 100%; }
 .b-warp .top img{ width: 60px; height: 60px; margin: 6px 0 0 10px;  }
 .b-warp .top .title{ color: #fff;    margin-top: -64px;
     padding-left: 80px; }
@@ -73,3 +73,23 @@ span.subtime{    line-height: 1.2rem; height: 1.2rem; padding-left: 13px; backgr
 .newslist .list li.tw .t{ width: 28% }
 .newslist .list li.tw .t img{ width: 100% }
 .intr .subtit{ text-align: center; margin-bottom: 6px; }
+
+/*招聘*/
+.recruitlist{ background-color: #ebf0f4; padding-top: 3px;}
+.recruitlist li{ padding: 10px 16px; margin-bottom:  3px; pa background-color: #fff; }
+
+.recruitlist .t1,.recruitlist .t2{ display: -webkit-flex;justify-content:space-between;
+  display: flex;font-size: 12px;}
+  .recruitlist .t1{ border-bottom: 1px dashed #eee;padding-bottom: 5px; margin-bottom: 5px;} 
+.recruitlist .t1 .img{ width: 40px; position: relative; margin-right: 10px;  }
+.recruitlist .t1 img{ width: 100%; }
+.recruitlist .t1 .img i{ position: absolute; width: 16px; height: 16px; color: #fff; background-color: #eb4c3c; border-radius: 8px; left: -5px; top: -2px;font-size: 12px; line-height: 16px; text-align: center; }
+
+.recruitlist .t1 .c-d{flex-grow:2; }
+.recruitlist .t1 .c-d div{ position: relative; }
+.recruitlist .t1 .c-d h3{ width: 70%; font-size: 16px; }
+.recruitlist .t1 .c-d .s1{ position: absolute; right: 0; top: 6px; background-color: #3F8FF7; width: 50px; height: 20px; border-radius: 4px; text-align: center; color: #000; line-height: 20px;display: inline-block; }
+.recruitlist .t1 .c-d .s2{ position: absolute; right: 0; top: 6px;  color: #FF6533; }
+.recruitlist .t1 .c-d em{ line-height: 2rem; height: 2rem;color: #a3a3a3; font-size: .6rem; }
+.recruitlist .t2 p{ overflow: hidden; }
+.recruitlist .t2 p span{ display: inline-block; color: #3F8FF7; border: 1px solid #3F8FF7; border-radius: 4px; padding: 0 3px; line-height: 18px; height: 18px; margin-right: 3px; text-align: center; font-size: 10px; cursor: pointer;}
