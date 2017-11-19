@@ -1,13 +1,14 @@
 require.config({
 baseUrl:"../js/common",
 paths: { 
-    "zepto":  "zepto.min",
+    "zepto":  "jquery",
     "swipeSlide":'swipeSlide',
-    "Layer":'layerCommon'
+    "Layer":'layerCommon',
+    'newsScroll':'newsScroll'
 },
 shim: {
 　　'zepto':{
-　　　 exports: 'Zepto'
+　　　 exports: 'jQuery'
 　　},
     'swipeSlide':{
         deps: ['zepto'],
@@ -16,7 +17,7 @@ shim: {
 }
 });
 
-require(['zepto','swipeSlide','Layer'],function ($,swipeSlide,Layer) {
+require(['zepto','swipeSlide','Layer','newsScroll'],function ($,swipeSlide,Layer,newsScroll) {
     var BubbleLayer = {
         init: function(){
             this.$root = $('.js-bubble');
@@ -91,7 +92,17 @@ require(['zepto','swipeSlide','Layer'],function ($,swipeSlide,Layer) {
     })
     
     //班级设置
-    Layer.fn.show($('.js-setting'))
+    //Layer.fn.show($('.js-setting'));
+
+    //滚动新闻
+   newsScroll.Scroll({
+        $dom: $('.js-topics')[0],
+        line: 1,
+        speed: 600,
+        timer: 2000
+    });
+
+
     
 });
 
