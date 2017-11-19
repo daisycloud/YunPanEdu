@@ -92,7 +92,7 @@ require(['zepto','swipeSlide','Layer','newsScroll'],function ($,swipeSlide,Layer
     })
     
     //班级设置
-    //Layer.fn.show($('.js-setting'));
+    Layer.fn.show($('.js-setting'));
 
     //滚动新闻
    newsScroll.Scroll({
