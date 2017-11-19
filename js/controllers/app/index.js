@@ -17,6 +17,18 @@ shim: {
 });
 
 require(['zepto','swipeSlide'],function ($,swipeSlide) {
+    var BubbleLayer = {
+        init: function(){
+            this.$root = $('.js-bubble');
+            this.$mask = this.$root.parent().find('.mask');
+            this.$mask.bind('click', function(e){ $(e.currentTarget).parent().hide();})
+        },
+        show: function(){
+            this.$root.show();
+        }
+
+    };
+
     var Swipe = {
         init: function(){
             var $root = this.$root = $('.b-swipe-img'),
@@ -72,6 +84,13 @@ require(['zepto','swipeSlide'],function ($,swipeSlide) {
     //初始化轮播图
     Swipe.init();
 
+    BubbleLayer.init();
+
+    //Events
+    $('.js-msg').bind('click', function(){
+        BubbleLayer.show();
+    })
+    
 });
 
 
