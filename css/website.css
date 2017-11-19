@@ -146,32 +146,16 @@ span.subtime{    line-height: 1.2rem; height: 1.2rem; padding-left: 13px; backgr
 .login-item li span{ width: 30px; height: 30px;line-height: 30px; display: inline-block;  background-color: #3F8DF5; border-radius: 15px; vertical-align: middle; text-align: center; margin-right: 10px; }
 .login-item li span img{ width: 60%; height:60%; vertical-align: middle; }
 .login-item li i{  font-size: 1rem; }
-.tarea {
-    background: transparent;
-    width: 100%;
-    height: 6rem; margin: 0;
-}
-.anr-item{ margin-top:  10px;
-    border-bottom: 1px solid #dfdfdf;  text-align: right; padding-bottom: 5px;}
-.recr-onliine-layer .box .close{
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    display: inline-block;
-    position: absolute;
-    top: 20px;
-    margin-top: -10px;
-    left: auto;
-    right: .5rem;
-}
-.recr-onliine-layer .box .close:before,.recr-onliine-layer .box .close:after{position: absolute;
-    content: "";
-    width: 12px;
-    height: 2px;
-    top: 50%;
-    left: 50%;
-    margin: -1px 0 0 -6px;}
-    .recr-onliine-layer .box .close:before{
-    background: #fff;transform: rotate(-45deg);}
-        .recr-onliine-layer .box .close:after{
-    background: #fff;transform: rotate(45deg);}
+
+.tarea {background: transparent; width: 100%; height: 6rem; margin: 0; }
+ .anr-item{ margin-top:  10px; border-bottom: 1px solid #dfdfdf;  text-align: right; padding-bottom: 5px;}
+ .recr-onliine-layer .box .close{width: 20px; height: 20px; border-radius: 50%; display: inline-block; position: absolute; top: 20px; margin-top: -10px; left: auto; right: .5rem; }
+ .recr-onliine-layer .box .close:before,.recr-onliine-layer .box .close:after{position: absolute; content: ""; width: 12px; height: 2px; top: 50%; left: 50%; margin: -1px 0 0 -6px;} .recr-onliine-layer .box .close:before{background: #fff;transform: rotate(-45deg);} .recr-onliine-layer .box .close:after{background: #fff;transform: rotate(45deg);}
+
+.sex-check i{ display: inline-block; width: 38px; height: 24px; line-height: 24px; font-size: 12px; text-align: center; }
+
+.login-item .sex-check {float: right;}
+.sex-check i.on{ background-color: #408ef6; color: #fff; border-top-right-radius:2px;
+border-bottom-right-radius:2px;border:1px solid #408ef6;}
+.sex-check i{ border:1px solid #e8effe; background-color: #fff; color: #e8effe; border-top-left-radius:2px;
+border-bottom-left-radius:2px; cursor: pointer;}

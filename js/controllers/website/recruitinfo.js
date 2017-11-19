@@ -3,6 +3,7 @@ baseUrl:"../js/common",
 paths: { 
     "zepto":  "jquery",
     "Layer":'layerCommon',
+    "checkbtn":'checkbtn',
 },
 shim: {
 　　'zepto':{
@@ -12,11 +13,14 @@ shim: {
 }
 });
 
-require(['zepto','Layer'],function ($,Layer) {
+require(['zepto','Layer','checkbtn'],function ($,Layer,checkbtn) {
    
    $('.js-online').bind('click', function(){
         Layer.fn.show($('.recr-onliine-layer'));
    })
+
+   //性别切换
+   checkbtn.set( {$root:$('.sex-check')})
    
 
   
