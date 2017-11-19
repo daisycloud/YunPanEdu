@@ -2,8 +2,8 @@ require.config({
 baseUrl:"../js/common",
 paths: { 
     "zepto":  "zepto.min",
-    "swiper":"swiper-3.4.2.jquery.min",
-    "swipeSlide":'swipeSlide'
+    "swipeSlide":'swipeSlide',
+    "Layer":'layerCommon'
 },
 shim: {
 　　'zepto':{
@@ -16,7 +16,7 @@ shim: {
 }
 });
 
-require(['zepto','swipeSlide'],function ($,swipeSlide) {
+require(['zepto','swipeSlide','Layer'],function ($,swipeSlide,Layer) {
     var BubbleLayer = {
         init: function(){
             this.$root = $('.js-bubble');
@@ -26,7 +26,6 @@ require(['zepto','swipeSlide'],function ($,swipeSlide) {
         show: function(){
             this.$root.show();
         }
-
     };
 
     var Swipe = {
@@ -90,6 +89,9 @@ require(['zepto','swipeSlide'],function ($,swipeSlide) {
     $('.js-msg').bind('click', function(){
         BubbleLayer.show();
     })
+    
+    //班级设置
+    Layer.fn.show($('.js-setting'))
     
 });
 
