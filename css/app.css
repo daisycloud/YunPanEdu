@@ -186,6 +186,13 @@ a.login-btn, .login-btn a{ color: #fff; }
       color:#333;
       font-size: 20px;
     } 
+
+.login-item .sex-check {float: right; font-size: 12px;}
+.sex-check i.on{ background-color: #408ef6; color: #fff; border-top-right-radius:2px;
+border-bottom-right-radius:2px;border:1px solid #408ef6;}
+.sex-check i{ display: inline-block; width: 38px; height: 24px; line-height: 24px; font-size: 12px; text-align: center; border:1px solid #e8effe; background-color: #fff; color: #e8effe; border-top-left-radius:2px;
+border-bottom-left-radius:2px; cursor: pointer;}
+
 /*微信ui*/
 [class^="weui-icon-"], [class*=" weui-icon-"] {
     display: inline-block;
