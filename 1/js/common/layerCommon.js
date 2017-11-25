@@ -15,9 +15,7 @@ define(['zepto'], function ($){
  		$dom.css({'left': (width - dom_w) / 2 + 'px', 'top': (height - dom_h) / 2 + 'px'});
 
  		$mask.bind('click', function(e){ $root.hide();});
-
- 		$close.bind('click', function(e){ 
- 			$root.hide();})
+ 		$close.bind('click', function(e){ $root.hide();})
 
  	}
  }

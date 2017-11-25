@@ -302,24 +302,5 @@ textarea::-webkit-input-placeholder{
     .b-top-menu { max-width: 638px;width:100%;position: fixed !important; }/*产品列表顶部菜单*/
     .b-bottom-panel {max-width:638px;width:100%;position:fixed !important; }/*底部操作区域*/
     .e-shoppingCart-list { min-height:80vh !important;}/*购物车列表*/
-    #alert-mask { position: fixed !important; width:640px !important;margin-left: -320px !important; left: 50% !important;}/*遮罩*/
+    #alert-mask { position: fixed !important; width:640px !important;margin-left: -320px !important; left: 50% !important; }/*遮罩*/
 }
-
-
-/* display: -webkit-flex;
-    display:flex; 
-
-
- flex-grow:2;
-
-
-  verflow: hidden;
-text-overflow:ellipsis;
-white-space: nowrap;
-
-
-.left {width: 200px; height: 50px; float: left; background: coral;}
-    .right {width: 120px; height:  200px; float: right; background: lightblue;}
-    .middle {margin-left: 220px; background: lightpink; margin-right: 140px;}
-
-    */
