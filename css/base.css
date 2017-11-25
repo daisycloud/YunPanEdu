@@ -313,10 +313,7 @@ textarea::-webkit-input-placeholder{
  flex-grow:2;
 
 
-  verflow: hidden;
-text-overflow:ellipsis;
-white-space: nowrap;
-
+overflow: hidden; text-overflow:ellipsis; white-space: nowrap;
 
 .left {width: 200px; height: 50px; float: left; background: coral;}
     .right {width: 120px; height:  200px; float: right; background: lightblue;}

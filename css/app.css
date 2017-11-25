@@ -297,6 +297,7 @@ vertical-align: middle;
 .icon-switch{ background-position: 0 -215px; }
 
 /*我的消息*/
+
 .normal-h{ text-align: center;     color: #fff;position: relative;}
 .normal-h h1{ line-height: 30px;   text-align: center; font-size:16px; margin: 0 auto; font-weight: 400;
 }
@@ -305,9 +306,9 @@ vertical-align: middle;
 .msg-list li{ border-bottom: 1px solid #ccc; padding:12px 0; 
 /*  display: -webkit-flex;
     display:flex; */  }
-.message .portrait{ float: left; width: 40px; height: 40px; border-radius: 20px; line-height: 40px; position: relative; }
-.message .portrait img{  vertical-align: middle;  }
-.portrait i{ width: 14px; height: 14px; line-height: 14px; background-color: #E94B3D; color: #fff; border-radius:7px; text-align: center; position: absolute; right: -2px; top:-2px; font-weight: 700; }
+.message .portrait, .com-app .portrait{ float: left; width: 36px; height: 36px; border-radius: 18px; line-height: 36px; position: relative; }
+.message .portrait img,.com-app .portrait img{  vertical-align: middle;  }
+.portrait i,.avatar i{ width: 14px; height: 14px; line-height: 14px; background-color: #E94B3D; color: #fff; border-radius:7px; text-align: center; position: absolute; right: -2px; top:-2px; font-weight: 700; }
 .msg-list div{ /*flex-grow:2;*/ line-height: 20px; overflow: hidden;  margin-left: 50px; margin-right: 70px;}
 .msg-list div strong{ font-size:16px; font-weight: 700;  }
 .msg-list div span{ font-size:12px;color: #a3a3a3 ; height: 20px; overflow: hidden;
@@ -315,13 +316,16 @@ text-overflow:ellipsis;
 white-space: nowrap; display: block;}
 .msg-list  .time{  padding-top: 8px; float: right; font-size: 10px; color:#a3a3a3;  }
 
-.message .b-center-content{ background-color: #eaeaea; }
+.message-info .b-center-content{ background-color: #eaeaea; }
+.avatar{float: left; width: 36px; height: 36px; position: relative; }
+.avatar img{width: 100%; height: 100%; border-radius:50%;}
+.msg-info .avatar{}
 .msg-info .portrait{ margin:0; float: left; width: 36px; height: 36px; border-radius: 18px; line-height: 36px; position: relative; }
-.msg-info .rg .portrait{ float: right; }
+.msg-info .rg .portrait,.msg-info .rg .avatar{ float: right; }
 .msg-info h4{ margin: 10px; overflow: hidden; text-align: center; height: 18px; }
 .msg-info h4 span{ font-weight: 400; display: inline-block; background-color:#CDCDCD; color: #fff; line-height: 18px; height: 18px;  padding: 0 5px; border-radius: 4px; font-size: 10px;} 
 .msg-info div{  margin:15px 10px; }
-  .msg-info div p{ background-color: #fff;  position: relative;  margin-left: 50px; margin-right: 50px; font-size: 14px; line-height: 16px; padding:8px 10px; border-radius: 4px;} 
+  .msg-info div p{ background-color: #fff;  position: relative;  margin-left: 50px; margin-right: 50px; font-size: 14px; line-height: 16px; padding:10px; border-radius: 4px;} 
 .msg-info div p:before{    content: " "; position: absolute; top: 9px; right: 100%; border: 6px solid transparent; border-right-color: #fafafa;} 
 .msg-info div.rg  p:before{left: 100%;border-left-color: #fafafa; border-right: none; } 
 
@@ -329,5 +333,21 @@ white-space: nowrap; display: block;}
 .msg-bar input{margin-right: 10px; border-bottom: 1px solid #ccc; width: 100%;}
 .msg-bar button{ float: right; width: 120px; border-radius: 4px;  background-color: #408ef6; line-height: 20px; text-align: center; color: #fff; cursor: pointer;letter-spacing: 2px}
 .msg-bar button:active{ background-color: #73adfa; }
+
+/*家庭作业预览*/
+.task-av{ float: left; width: 65px; height: 65px;  display: block; }
+.task-av strong{color: #fff; font-weight: 400; display: block;  background-color:#408ef6; height: 20px; line-height: 20px; padding: 0 6px; border-radius:8px; margin-top: -5px; text-align: center; }
+.box .block{ background-color: #ebf0f4; padding-top: 5px; }
+.box .w{background-color: #fff; }
+.box .tit{ padding: 15px 10px; }
+.tit .word{ margin-left: 75px; }
+.tit .word p{ font-weight: 700; line-height: 30px; height: 30px; font-size:16px; overflow: hidden; text-overflow:ellipsis; white-space: nowrap; }
+.tit .word span{ line-height: 18px; height: 36px; overflow: hidden; color: #ccc; display: block; }
+.tit .word i{ color: #E94B3D; text-align: right; font-size: 10px; display: block; line-height: 20px; }
+.tab-cont{ padding:10px; }
+.task-item li{ margin-bottom: 10px; background-color: #fafafa; padding:10px; border-radius: 4px; border:1px solid #ededef; }
+.f-wei{ font-weight: 700; }
+.task-item li .time{ height: 24px; background-color: #fff; padding: 0 10px; line-height: 24px; border: 1px solid #3F8DF5; color: #3F8DF5; border-radius: 4px; letter-spacing: 2px;margin-top: 7px; }
+.task-item li .active{ border-color:#FFB523; color: #FFB523; }
 
 
