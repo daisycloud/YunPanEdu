@@ -431,3 +431,15 @@ span.subtit {line-height: 20px; height: 20px; padding-left: 13px; background: ur
 .gr-icon-location{line-height: 1.2rem; height: 24px; padding-left: 25px; background: url(../images/location.fw.png) no-repeat 0 0; color: #a3a3a3; background-size: 19px 23px; font-size: 14px;}
 .ar-yellow{ color: #FFB524; border-color:#FFB524; }
 .ar-gray{ color: #D5D5D5; border-color:#D5D5D5; }
+
+/*tab*/
+.tab-t{ }
+.tab-t ul{ height:32px;border-bottom: 1px solid #d9e8fd; font-size: 14px;display: -webkit-flex;
+    display:flex; width: 100%; }
+.tab-t li{  cursor: pointer; line-height: 32px;height:32px; font-weight: 700;  padding: 0 10px; width: 50%; float: left; text-align: right; }
+.tab-t li:last-child{ text-align: left }
+.tab-t span{ display:inline-block; text-align: center; }
+.tab-t span i{ display: none;width: 60%; margin-left: 20%; height: 4px; margin-bottom: 2px; background: #408ef6; }
+.tab-t .active span i{ display: block; }
+
+.tab-cont ul{ display: none; }
