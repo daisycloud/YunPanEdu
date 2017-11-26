@@ -140,7 +140,7 @@ a.login-btn, .login-btn a{ color: #fff; }
 
 .cm-header {
       position: relative;
-      height           : 44px;
+      min-height           : 44px;
       line-height      : 44px;
       color            : #fff;
       z-index          : 960
@@ -410,4 +410,24 @@ span.subtit {line-height: 20px; height: 20px; padding-left: 13px; background: ur
 .vo-bar button{ height: 40px; line-height: 40px; margin: 10px auto;}
 
 
+/*保修*/
+.ser-bar{ height:30px; line-height: 30px; background-color: #fff; border-radius: 4px; clear: both;     position: absolute; left: 10px; bottom: 7px; right: 10px; } 
+.with-ser{ height: 80px; display: block !important;  }
+.cm-header{padding-top: 4px;}
+.ser-bar input{ width: 100%; background:transparent; text-align: center; padding: 0 20px; line-height: 30px; height: 30px; }
+.ser-bar:before {width: 12px; height: 12px; left: 14px; top: 8px; border: 1px solid #a7c8f3; border-radius: 50%; position: absolute; content: ""; } 
+.ser-bar:after {width: 1px; height: 7px; left: 26px; top: 15px; background: #a7c8f3; -webkit-transform: rotate(-45deg); -ms-transform: rotate(-45deg); transform: rotate(-45deg); position: absolute; content: ""; }
 
+.bggray{background-color: #ebf0f4;}
+.repair-list li{background-color: #fff; margin-bottom: 5px; padding: 5px 10px;}
+.repair-list .t{ line-height: 30px; height: 30px; border-bottom: 1px solid #EDEDEF; }
+
+.repair .b-center-content{ top: 80px; }
+.ar-box{ padding: 0 10px; border:1px solid #88DD63; line-height: 24px; height: 24px; border-radius:4px; color: #88DD63; font-size: 12px; }
+.repair-list .ar-box{ float: right; }
+.repair-list .t2{ margin: 10px 0; }
+.repair-list .t2 span{ font-weight: 700; color: #7B7B7B; line-height: 24px; height: 24px;  font-size: 14px;}
+.fr{ float: right;}
+.gr-icon-location{line-height: 1.2rem; height: 24px; padding-left: 25px; background: url(../images/location.fw.png) no-repeat 0 0; color: #a3a3a3; background-size: 19px 23px; font-size: 14px;}
+.ar-yellow{ color: #FFB524; border-color:#FFB524; }
+.ar-gray{ color: #D5D5D5; border-color:#D5D5D5; }
